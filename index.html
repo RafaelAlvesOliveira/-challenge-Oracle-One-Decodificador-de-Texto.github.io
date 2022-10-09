@@ -1,0 +1,65 @@
+<!DOCTYPE html 5>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="logo">
+        <a href="https://www.alura.com.br/" target="_brank"><img src="images/logo.png" alt="Logo Alura">
+        </a>
+        <h1>Decodificador de Texto</h1>
+        
+    </header>
+
+    <main class="main">
+
+        <section class="secao-texto">
+            <textarea class="input-texto" cols="40" rows="6" placeholder="Digite seu texto"></textarea>
+
+            <div class="informacoes">
+                <h6 class="informacao">
+                    <img src="images/iconeMsg.png" alt="icone mensagem">
+                    Apenas letras minúsculas e sem acento</h6>
+            </div>
+            <div class="botoes">
+                <button class="encriptar" onclick="btnCriptografar()">
+                    Criptografar
+                </button>
+    
+                <button class="desencriptar" onclick="btnDescriptografar()">
+                    Descriptografar
+                </button>
+            </div>
+
+        </section>
+        
+        <section class="mensagem-saida">
+            <textarea  class="mensagem" cols="20" rows="8"></textarea> 
+            
+            <button id="btnCopiar" onclick="copiar()">Copiar</button>
+
+            <div class="textoSaida">
+                <h3>Nenhuma mensagem encontrada</h3>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </section>    
+    </main>
+    <div class="footer">
+        <span>
+            &copy; Desenvolvido por: Rafael Alves
+        </span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
